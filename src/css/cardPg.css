@@ -1,0 +1,94 @@
+html, body {
+    height:100%;
+    scrollbar-width: none;
+    /* background-color: rgb(239, 239, 239); */
+    width: 100%;
+    height: 100%;
+    animation-name: back;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes back {
+  50% {
+    background: rgb(250, 211, 214);
+  }
+}
+
+h1{
+    position: fixed;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', cursive;
+    font-size: clamp(2vw, 3.5rem, 4vw);
+    text-transform: capitalize;
+    text-align: center;
+    z-index: 100;
+    color: rgba(151, 57, 57, 0.77);
+    text-shadow: -2px 1px 10px rgb(255, 180, 193);
+  
+    /* color: rgba(241, 95, 95, 0.77); */
+    filter: drop-shadow(1rem .75rem .3rem rgba(223, 48, 48, 0.5));
+}
+
+.container {
+  position: relative;
+  
+
+  /* display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse; */
+}
+
+.button {
+ 
+  height: clamp(6vw, 2rem, 12vw);
+  border: .75vw double rgba(135, 56, 56, 0.893);
+  border-radius: 15vw;
+  background-color: rgba(242, 118, 118, 0.893);
+
+  top: 80%;
+  left: 2.5%;
+  position: fixed;
+  padding: .5vw 2.5vw;
+  
+  opacity: 0.9;
+  z-index: 100;
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  gap: 5%;
+  transition: 450ms ease-in-out;
+}
+
+.button:hover {
+  transform: translate(0, 1vh) scale(1.05) rotate(-2.5deg);
+  background-color: rgb(245, 173, 173);
+}
+
+.button a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: clamp(.5rem, 2vw, 3rem);
+  height: auto;
+  width: auto;
+  font-family: 'Playfair Display', cursive, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(65, 20, 37);
+  text-shadow: -2px 1px 10px rgb(255, 180, 193);
+  
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+#arrow {
+    position: relative;
+    font-size: clamp(.75rem, 3vw, 4.5rem);
+    top: 15%;
+}
